@@ -8,27 +8,27 @@
     <div id="intro" style="height: 100vh">
         <div class="centerTop">
             <img src="images/SquareKennyProfile.jpg" alt="Kenny Picture" style="border-radius:50%; width:175px; border: 2px solid black;" />
-            <h1 style="color: white">
+            <h1 class="text1">
                 Kenny Le
             </h1>
-            <h2 style="color: white">
+            <h2 class="text2">
                 Aspiring Software Developer | B.S. in Computer Science at ASU
             </h2>
             <div id="icons">
                 <ul>
                     <li>
                         <a target="_blank" href="https://www.linkedin.com/in/kennyvanle/">
-                            <img style="width: 50px" src="images/linkedInSymbol.png" />
+                            <img style="width: 50px; border-radius: 5px;" src="images/linkedInSymbol1.png" />
                         </a>
                     </li>
                     <li>
                         <a target="_blank" href="https://github.com/LeKenny7">
-                            <img style="width: 50px" src="images/githubSymbol.png" />
+                            <img style="width: 50px; border-radius:50%;" src="images/githubLogo.jpg" />
                         </a>
                     </li>
                     <li>
                         <a target="_blank" href="mailto:lekenny1999@yahoo.com">
-                            <img style="width: 50px" src="images/emailSymbol.png" />
+                            <img style="width: 58px" src="images/emailLogo.png" />
                         </a>
                     </li>
                 </ul>
@@ -37,11 +37,14 @@
     </div>
 
     <div id="about">
-
         <div class="aboutWrapper center">
             <div class="box header"><h2>About Me</h2></div>
-            <div class="box sidebar"><img src="images/KennyProfile.jpg" alt="Kenny Linkdin" class="profile_img" onclick="window.location='https://www.linkedin.com/in/kennyvanle/'" /></div>
-            <div class="box content">
+            <div class="box sidebar">
+                <a target="_blank" href="https://www.linkedin.com/in/kennyvanle/">
+                    <img src="images/KennyProfile.jpg" alt="Kenny Linkdin" class="profile_img" />
+                </a>
+            </div>
+            <div class="box content" id="button">
                 <h2>I'm Kenny Le</h2>
                 <p style="padding-bottom: 10px;">
                     I am interested in Software Development. My strongest language is C# where I worked with .NET framework and the Unity Engine. I have also worked in Linux where I used PostgreSQL for my databases. I am also experience in Java where I did JUnit testing. Many of my projects are in front-end development, but it is not my main focus.
@@ -53,7 +56,7 @@
         </div>
     </div>
 
-    <div class="center" style="padding-top: 20px;">
+    <div class="center" style="padding-top: 40px;">
         <h2>Work Experience</h2>
     </div>
 
@@ -108,38 +111,50 @@
         </div>
     </div>
 
-    <div style="padding: 30px">
-
-    </div>
+    <div style="padding: 30px"></div>
 
     <div id="projects">
         <div class="projectsWrapper center">
             <div class="box header"><h2>Projects</h2></div>
             <div class="box content1">
-                <img src="images/capstoneLogo.PNG" alt="Capstone Project Logo" class="gallery_img" onclick="window.location='https://www.youtube.com/watch?v=OaTQUEzgeoc'" />
-                <p>Capstone</p>
+                <a target="_blank" href="https://www.youtube.com/watch?v=OaTQUEzgeoc">
+                    <img src="images/capstoneLogo.PNG" alt="Capstone Project Logo" class="gallery_img" />
+                </a>
+                <p>We created a playground construction simulator through augmented reality. The project was made using C# and Unity. Since the project is a work in progress, I will not post the code but rather a link to a short YouTube video of the functionalities in the project.</p>
             </div>
             <div class="box content2">
-                <img src="images/animalCrossingLogo.PNG" alt="Animal Crossing Project Logo" class="gallery_img" onclick="window.location='https://github.com/Moses-kang/CSE412-Final-Project'" />
-                <p>Animal Crossing</p>
+                <a target="_blank" href="https://github.com/LeKenny7/AnimalCrossingDataBase">
+                    <img src="images/animalCrossingLogo.PNG" alt="Animal Crossing Project Logo" class="gallery_img" />
+                </a>
+                <p>
+                    Since there are hundreds of items in Animal Crossing: New Horizons, used a database to easily search for any type of item within the game. The project was made using HTML, CSS, Python, PostgreSQL, and Flask.
+                </p>
             </div>
             <div class="box content3">
-                <img src="images/royalFlushArtistryLogo.jpg" alt="Royal Flush Artistry Logo" class="gallery_img" onclick="window.location='https://royalflushartistry.com/'" />
-                <p>Services</p>
+                <a target="_blank" href="https://github.com/LeKenny7/Motivation-App">
+                    <img src="images/appLogo.PNG" alt="App Logo" class="gallery_img" />
+                </a>
+                <p>People tend to forget the goals they set the day before. This app helps others remember their goals by creating a task list that will remain until the user removes them. The project was made using Swift on the XCode application.</p>
             </div>
             <div class="box header3"><h2>Website Projects</h2></div>
             <div class="box header1"><h3>Aristry Landing Page for My LC</h3></div>
             <div class="box header2"><h3>Shopify Websites I Created for My Clients</h3></div>
             <div class="box content4">
-                <img src="images/aristryLogo.png" alt="Aristry Logo" class="gallery_img" onclick="window.location='https://aristry.app/'" />
+                <a target="_blank" href="https://aristry.app/">
+                    <img src="images/aristryLogo.png" alt="Aristry Logo" class="gallery_img" />
+                </a>
                 <p>I made a landing page for my company. The company will be a social media site for artists where they can connect and share their work.</p>
             </div>
             <div class="box content5">
-                <img src="images/sugrbumLogo.png" alt="SugrBum Logo" class="gallery_img" onclick="window.location='https://sugrbum.com/'" />
+                <a target="_blank" href="https://sugrbum.com/">
+                    <img src="images/sugrbumLogo.png" alt="SugrBum Logo" class="gallery_img" />
+                </a>
                 <p>I was contracted to transfer my client's SquareSpace site to Shopify. I made the About page completely from scratch and added the drop down in the FAQ page. Other pages on the website include my own code and modifications I made to the original liquid files.</p>
             </div>
             <div class="box content6">
-                <img src="images/royalFlushArtistryLogo.jpg" alt="Royal Flush Artistry Logo" class="gallery_img" onclick="window.location='https://royalflushartistry.com/'" />
+                <a target="_blank" href="https://royalflushartistry.com/">
+                    <img src="images/royalFlushArtistryLogo.jpg" alt="Royal Flush Artistry Logo" class="gallery_img" />
+                </a>
                 <p>This is the first website I made. I built the double slideshows and worked closely with the client to get the layout just the way they wanted.</p>
             </div>
         </div>

@@ -15,11 +15,34 @@
     height: 100px;
 }
 
+.text1{
+    animation: text 3s 1;
+}
+
+.text2 {
+    animation: text2 3s 1;
+}
+
+@keyframes text {
+    0% {
+        color: grey;
+        letter-spacing: 20px;
+    }
+}
+
+@keyframes text2 {
+    0% {
+        color: grey;
+        transform: translate(0, 50vh);
+    }
+}
+
 .gallery_img {
     width: 300px;
     height: 125px;
     padding: 0px;
     cursor: pointer;
+    border-radius: 5px;
 }
 
 .gallery_img:hover {
@@ -47,7 +70,7 @@
     text-decoration: none;
 }
 
-#icons li{
+#icons li {
     display: inline;
     padding: 0 5px 0 5px;
 }
@@ -100,17 +123,16 @@
     background-color: #efefef;
 }
 
-#about button {
-    background-color: grey;
-    color: white;
-}
-
-#about a {
+#button a {
     background-color: black;
     text-decoration: none;
     padding: 10px;
     color: white;
     border-radius: 4px;
+}
+
+#button a:hover{
+    opacity:0.5;
 }
 
 .profile_img {
@@ -296,6 +318,7 @@ body * {
     background-color: #efefef;
     color: black;
     width: 80vw;
+    padding-bottom:200px;
 }
 
 #projects p{
@@ -350,6 +373,7 @@ body * {
     .projectsWrapper {
         grid-template-columns: 100%;
         grid-template-areas:
+            "header"
             "content1"
             "content2"
             "content3"
