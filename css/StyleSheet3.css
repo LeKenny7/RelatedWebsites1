@@ -3,7 +3,7 @@
 }
 
 .background_img {
-    background-image: url('/images/cliffBackground1.jpg');
+    background-image: url('../images/cliffBackground1.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -61,7 +61,7 @@
 }
 
 #intro {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/mountainBackground.jpg");
     background-size: cover;
     color: white;
 }
