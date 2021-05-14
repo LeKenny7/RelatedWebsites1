@@ -1,55 +1,149 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8" />
-    <link rel="stylesheet" href="css/StyleSheet.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+    <link rel="stylesheet" href="css/StyleSheet3.css" />
 </head>
-<body>
-    <div style="background-image: url('images/beachBackground.jpg')">
-        <div class="center">
-            <h1>
-                Hello, I'm Kenny Le
+<body class="background_img">
+    <div id="intro" style="height: 100vh">
+        <div class="centerTop">
+            <img src="images/SquareKennyProfile.jpg" alt="Kenny Picture" style="border-radius:50%; width:175px; border: 2px solid black;" />
+            <h1 style="color: white">
+                Kenny Le
             </h1>
-            <h2>
-                Inspiring Software Developer | B.S. in Computer Science at ASU
+            <h2 style="color: white">
+                Aspiring Software Developer | B.S. in Computer Science at ASU
             </h2>
+            <div id="icons">
+                <ul>
+                    <li>
+                        <a target="_blank" href="https://www.linkedin.com/in/kennyvanle/">
+                            <img style="width: 50px" src="images/linkedInSymbol.png" />
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://github.com/LeKenny7">
+                            <img style="width: 50px" src="images/githubSymbol.png" />
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="mailto:lekenny1999@yahoo.com">
+                            <img style="width: 50px" src="images/emailSymbol.png" />
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
-    <div style="background-color: lightgray;">
-        <table style="width:100%">
-            <tr>
-                <td>
-                    <img src="images/KennyProfile.jpg" alt="Kenny Linkdin" class="profile_img" onclick="window.location='https://www.linkedin.com/in/kennyvanle/'" />
-                </td>
-                <td>
-                    <h1 style="text-align: center">Here are some Web projects I have been working on!</h1>
-                </td>
-                <td>
-                    <img src="images/KennyProfile.jpg" alt="Kenny Linkdin" class="profile_img" style="opacity:0" />
-                </td>
-            </tr>
-        </table>
+
+    <div id="about">
+
+        <div class="aboutWrapper center">
+            <div class="box header"><h2>About Me</h2></div>
+            <div class="box sidebar"><img src="images/KennyProfile.jpg" alt="Kenny Linkdin" class="profile_img" onclick="window.location='https://www.linkedin.com/in/kennyvanle/'" /></div>
+            <div class="box content">
+                <h2>I'm Kenny Le</h2>
+                <p style="padding-bottom: 10px;">
+                    I am interested in Software Development. My strongest language is C# where I worked with .NET framework and the Unity Engine. I have also worked in Linux where I used PostgreSQL for my databases. I am also experience in Java where I did JUnit testing. Many of my projects are in front-end development, but it is not my main focus.
+                </p>
+                <a href="/resume/KennyLeResume.pdf" download>
+                    <span>Download Resume</span>
+                </a>
+            </div>
+        </div>
     </div>
-    <h2 class="center">Shopify Websites I Created for My Clients</h2>
-    <div class="center">
-        <img src="images/sugrbumLogo.png" alt="SugrBum Logo" class="gallery_img" onclick="window.location='https://sugrbum.com/'" />
+
+    <div class="center" style="padding-top: 20px;">
+        <h2>Work Experience</h2>
     </div>
-    <div class="center">
-        <a href="https://sugrbum.com/">https://sugrbum.com/</a>
+
+    <div class="timeline center">
+        <div class="entry">
+            <div class="title">
+                <h3>Aristry LC</h3>
+                <p>Back End Developer</p>
+            </div>
+            <div class="body">
+                <ul>
+                    <li>Developing a social media site for artists to post and connect</li>
+                    <li>We are using Firebase backend support and currently have our landing page up</li>
+                </ul>
+            </div>
+        </div>
+        <div class="entry">
+            <div class="title">
+                <h3>Freelance</h3>
+                <p>Website Designer</p>
+            </div>
+            <div class="body">
+                <ul>
+                    <li>Developed custom web pages within Shopify and modified Shopify’s .liquid files</li>
+                    <li>Worked directly with happy clients to create and maintain their websites</li>
+                </ul>
+            </div>
+        </div>
+        <div class="entry">
+            <div class="title">
+                <h3>Freelance</h3>
+                <p>Front End Tutor</p>
+            </div>
+            <div class="body">
+                <ul>
+                    <li>Tutor college student in HTML, CSS, and JavaScript and how they connect together</li>
+                    <li>Explained concepts like variables, arrays, tags, and class vs id in simple terms</li>
+                </ul>
+            </div>
+        </div>
+        <div class="entry">
+            <div class="title">
+                <h3>iD Tech Camps</h3>
+                <p>Summer Camp Instructor</p>
+            </div>
+            <div class="body" style="margin-bottom:0">
+                <ul>
+                    <li>Taught middle and elementary students how to modify Minecraft files using Java and IntelliJ</li>
+                    <li>Presented to crowds of parents and fostered an inviting environment to students</li>
+                </ul>
+            </div>
+        </div>
     </div>
-    <div class="center">
-        <img src="images/royalFlushArtistryLogo.jpg" alt="Royal Flush Artistry Logo" class="gallery_img" onclick="window.location='https://royalflushartistry.com/'" />
+
+    <div style="padding: 30px">
+
     </div>
-    <div class="center" style="padding-bottom: 15px;">
-        <a href="https://royalflushartistry.com/">https://royalflushartistry.com/</a>
+
+    <div id="projects">
+        <div class="projectsWrapper center">
+            <div class="box header"><h2>Projects</h2></div>
+            <div class="box content1">
+                <img src="images/capstoneLogo.PNG" alt="Capstone Project Logo" class="gallery_img" onclick="window.location='https://www.youtube.com/watch?v=OaTQUEzgeoc'" />
+                <p>Capstone</p>
+            </div>
+            <div class="box content2">
+                <img src="images/animalCrossingLogo.PNG" alt="Animal Crossing Project Logo" class="gallery_img" onclick="window.location='https://github.com/Moses-kang/CSE412-Final-Project'" />
+                <p>Animal Crossing</p>
+            </div>
+            <div class="box content3">
+                <img src="images/royalFlushArtistryLogo.jpg" alt="Royal Flush Artistry Logo" class="gallery_img" onclick="window.location='https://royalflushartistry.com/'" />
+                <p>Services</p>
+            </div>
+            <div class="box header3"><h2>Website Projects</h2></div>
+            <div class="box header1"><h3>Aristry Landing Page for My LC</h3></div>
+            <div class="box header2"><h3>Shopify Websites I Created for My Clients</h3></div>
+            <div class="box content4">
+                <img src="images/aristryLogo.png" alt="Aristry Logo" class="gallery_img" onclick="window.location='https://aristry.app/'" />
+                <p>I made a landing page for my company. The company will be a social media site for artists where they can connect and share their work.</p>
+            </div>
+            <div class="box content5">
+                <img src="images/sugrbumLogo.png" alt="SugrBum Logo" class="gallery_img" onclick="window.location='https://sugrbum.com/'" />
+                <p>I was contracted to transfer my client's SquareSpace site to Shopify. I made the About page completely from scratch and added the drop down in the FAQ page. Other pages on the website include my own code and modifications I made to the original liquid files.</p>
+            </div>
+            <div class="box content6">
+                <img src="images/royalFlushArtistryLogo.jpg" alt="Royal Flush Artistry Logo" class="gallery_img" onclick="window.location='https://royalflushartistry.com/'" />
+                <p>This is the first website I made. I built the double slideshows and worked closely with the client to get the layout just the way they wanted.</p>
+            </div>
+        </div>
     </div>
-    <hr />
-    <h2 class="center">Aristry Landing Page For My LLC</h2>
-    <div class="center">
-        <img src="images/aristryLogo.png" alt="Aristry Logo" class="gallery_img" onclick="window.location='https://aristry.app/'" />
-    </div>
-    <div class="center" style="padding-bottom: 15px;">
-        <a href="https://aristry.app/">https://aristry.app/</a>
-    </div>
+
 </body>
 </html>

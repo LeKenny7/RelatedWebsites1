@@ -1,0 +1,363 @@
+﻿body {
+    margin: 0;
+}
+
+.background_img {
+    background-image: url('/images/cliffBackground1.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.topProfile{
+    border-radius: 50%;
+    width:100px;
+    height: 100px;
+}
+
+.gallery_img {
+    width: 300px;
+    height: 125px;
+    padding: 0px;
+    cursor: pointer;
+}
+
+.gallery_img:hover {
+    opacity: 0.5;
+}
+
+.center {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.centerTop {
+    text-align: center;
+    padding: 20vh 0;
+}
+
+#intro {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/images/mountainBackground.jpg');
+    background-size: cover;
+    color: white;
+}
+
+#icons a{
+    text-decoration: none;
+}
+
+#icons li{
+    display: inline;
+    padding: 0 5px 0 5px;
+}
+
+#icons li:hover{
+    opacity:0.5;
+}
+
+.sidebar {
+    grid-area: picture;
+}
+
+.content {
+    grid-area: content;
+    text-align: left;
+}
+
+.header {
+    grid-area: header;
+}
+
+.aboutWrapper {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 33.33% auto auto;
+    grid-template-areas:
+        "header ...... ......"
+        "picture content content"
+        "picture  content  content";
+    background-color: none;
+    color: black;
+    width:70vw;
+}
+
+
+.box {
+    background-color: none;
+    color: black;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.header,
+.header2 {
+    background-color: none;
+}
+
+#about {
+    padding: 20px 0 20px 0;
+    background-color: #efefef;
+}
+
+#about button {
+    background-color: grey;
+    color: white;
+}
+
+#about a {
+    background-color: black;
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+    border-radius: 4px;
+}
+
+.profile_img {
+    width: 210px;
+    display: inline;
+    border-radius: 5px;
+}
+
+.profile_img:hover {
+    opacity: 0.5;
+}
+
+#timeline body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 100px;
+    font-family: 'Source Sans Pro', arial, sans-serif;
+    font-weight: 300;
+    color: #333;
+    box-sizing: border-box;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+.timeline {
+    width: 100%;
+    max-width: 800px;
+    background: #efefef;
+    color: black;
+    padding: 50px 50px;
+    position: relative;
+    box-shadow: 0.5rem 0.5rem 2rem 0 rgba(0, 0, 0, 0.2);
+}
+
+.underline:after {
+    background: hsla(0,0%,56.5%,.797);
+    content: "";
+    display: inline-block;
+    height: 1px;
+    width: 9em;
+}
+
+.timeline:before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: calc(33% + 15px);
+    bottom: 0px;
+    width: 4px;
+    background: #ddd;
+}
+
+.timeline:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.entry {
+    clear: both;
+    text-align: left;
+    position: relative;
+}
+
+.entry .title {
+    margin-bottom: .5em;
+    float: left;
+    width: 33%;
+    padding-right: 30px;
+    text-align: right;
+    position: relative;
+}
+
+.entry .title:before {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border: 4px solid black;
+    background-color: #fff;
+    border-radius: 100%;
+    top: 15%;
+    right: -8px;
+    z-index: 99;
+}
+
+.entry .title h3 {
+    margin: 0;
+    font-size: 120%;
+}
+
+.entry .title p {
+    margin: 0;
+    font-size: 100%;
+}
+
+.entry .body {
+    margin: 0 0 2em;
+    float: right;
+    width: 66%;
+    padding-left: 30px;
+}
+
+.entry .body p {
+    line-height: 1.4em;
+}
+
+.entry .body p:first-child {
+    margin-top: 0;
+    font-weight: 400;
+}
+
+.entry .body ul {
+    color: black;
+    margin: 0;
+    padding-left: 0;
+    list-style-type: none;
+}
+
+.entry .body ul li:before {
+    content: "–";
+    margin-right: .5em;
+}
+
+.header1 {
+    grid-area: header1;
+    margin: 0;
+    padding: 0;
+}
+
+.header2 {
+    grid-area: header2;
+    margin: 0;
+    padding:0;
+}
+
+.header3 {
+    grid-area: header3;
+    margin: 0;
+    padding: 0;
+}
+
+.content1 {
+    grid-area: content1;
+}
+
+.content2 {
+    grid-area: content2;
+}
+
+.content3 {
+    grid-area: content3;
+}
+
+.content4 {
+    grid-area: content4;
+}
+
+.content5 {
+    grid-area: content5;
+}
+
+.content6 {
+    grid-area: content6;
+}
+
+.projectsWrapper {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 33.33% auto auto;
+    grid-template-areas:
+        "header header header"
+        "content1 content2 content3"
+        "header3 header3 header3"
+        "header1 header2 header2"
+        "content4 content5 content6";
+    background-color: #efefef;
+    color: black;
+    width: 80vw;
+}
+
+#projects p{
+    padding: 0 20px;
+}
+
+@media screen and (max-width: 1250px) {
+    .content4 {
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .projectsWrapper {
+        grid-template-columns: 50% 50%;
+        grid-template-areas:
+            "header header"
+            "content1 content1"
+            "content2 content3"
+            "header3 header3"
+            "header1 header1"
+            "content4 content4"
+            "header2 header2"
+            "content5 content6"
+    }
+    .gallery_img {
+        width: 250px;
+        height: 105px;
+    }
+}
+
+@media screen and (max-width: 900px)
+{
+    .aboutWrapper {
+        width: auto;
+        padding: 0 10px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .aboutWrapper {
+        grid-template-columns: auto;
+        grid-template-areas:
+            "header"
+            "picture"
+            "content";
+    }
+    .content4 {
+        width: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .projectsWrapper {
+        grid-template-columns: 100%;
+        grid-template-areas:
+            "content1"
+            "content2"
+            "content3"
+            "header3"
+            "header1"
+            "content4"
+            "header2"
+            "content5"
+            "content6";
+    }
+}
